@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #222222;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #a20dc0, #7f0283, #4f005f);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header .logo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 20px;
+    margin-right: 25px;
+    color: white;
+    transition: 0.7s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    color: #7f0283;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.logo {
+    
+        font-family: "Caveat", cursive;
+        color: white;
+        font-size: 40px;
+        padding-left: 2rem;
+    
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(./Images/landing\ bgp.png);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: top center;
+    height: 350px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    color: white;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 10px;
+}
+
+.buttons .btn-primary,
+.buttons .btn-secondary {
+    background-color: #292929;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: inset purple 0px 0px 30px;
+}
+
+.buttons .btn-primary:hover,
+.buttons .btn-secondary:hover {
+    background-color: #7f0283;
+    color: #080808;
+    box-shadow: inset rgb(255, 133, 255) 0px 0px 30px;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.technologies img {
+    width: 50px;
+    height: 50px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.form-container img {
+    width: 100%;
+    height: auto; 
+    border: 0px;
+    border-radius: 3rem;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer span {
+    flex: 1 1 100%;
+    margin: 5px 0;
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-wrap: nowrap;
+        font-size: 25px;
+    }
+
+    .footer {
+        flex-wrap: nowrap;
+        text-align: initial;
+    }
+
+    .footer span {
+        flex: unset;
+        margin: 0;
+    }
+   
+    
+}
+
+@media (max-width: 767px) {
+    .logo {
+        font-size: 35px;
+    }
+}
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .buttons button {
+        margin: 10px 20px;
+    }
+}

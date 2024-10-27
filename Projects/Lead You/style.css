@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainobject {
+    background-image: url(images/Path\ 15.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+  }
+  
+  h1,
+  .heading-text {
+    color: #D3E10E;
+    font: normal normal bold 86px/113px Assistant;
+  }
+  
+  p,
+  .description-text {
+    color: white;
+  }
+  
+ 
+  @media (max-width: 376px) {
+    .mainobject {
+      background-image: url(images/Group198.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 299px;
+    }
+    h1,
+    .heading-text {
+      font-size: 0px; 
+    }
+  
+    p,
+    .description-text {
+      font-size: 12px; 
+    }
+  
+    .form {
+      flex-direction: row; 
+    }
+  
+    .label-text {
+      text-align: right;
+      font-size: 16px;
+    }
+  }
